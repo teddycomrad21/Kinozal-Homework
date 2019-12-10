@@ -1,0 +1,94 @@
+html {
+  font-size: $font-size;
+}
+
+body {
+  font-family: $font-main;
+  font-size: 1rem;
+}
+
+a {
+  color: $color-primary;
+  transition: color 0.25s ease;
+
+  &:hover,
+  &:focus {
+    text-decoration: none;
+    color: $color-accent;
+  }
+}
+
+h1 {
+  font-family: $font-header;
+  font-size: 48px;
+  padding: 0 0 0 7.5px;
+  overflow: hidden;
+  margin: -7.5px 7.5px 45px 0;
+  position: relative;
+
+  &::after {
+    position: absolute;
+    width: 100%;
+    margin: 0.85em 0 0 15px;
+    content: "";
+    border-bottom: 3px solid rgba(240, 173, 79, 0.7);
+  }
+}
+
+h2 {
+  font-family: $font-header;
+  font-size: 40px;
+  margin: 60px 0 45px 45px;
+
+  &::before {
+    position: absolute;
+    left: 0;
+    width: 30px;
+    margin: 0.25em 0 0 0;
+
+    content: "";
+
+    border-bottom: 3px solid rgba(240, 173, 79, 0.7);
+  }
+
+  &::after {
+    position: absolute;
+    width: 100%;
+    margin: 0.85em 0 0 15px;
+    content: "";
+    border-bottom: 3px solid rgba(240, 173, 79, 0.7);
+  }
+}
+
+.container {
+  overflow: hidden;
+}
+
+.section {
+  position: relative;
+  overflow: hidden;
+}
+
+.footer {
+  background-color: $color-dark;
+  padding: 45px 0 20px;
+  display: flex;
+
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    a {
+      color: #777777;
+
+      &:hover {
+        color: $color-light;
+      }
+    }
+  }
+
+  &__title {
+    color: $color-light;
+  }
+}
