@@ -1,5 +1,6 @@
 .left-sidebar {
     margin-bottom: $gap * 4;
+    
 
     .panel:last-of-type {
         margin-bottom: 0;
@@ -13,6 +14,10 @@
     img {
         width: 100%;
     }
+}
+
+.panel {
+    margin-bottom: 30px;
 }
 
 .site-news {

@@ -10,6 +10,8 @@
         padding-right: 7.5px;
         padding-left: 7.5px;
 
+        
+
         &__image {
             width: 100%;
         }
@@ -24,10 +26,15 @@
             @include text-shortener;
         }
     }
+
+    .row {
+        padding: 0 7.5px;
+    }
 }
 
 .thumbnail {
     transition: all 0.5s;
+    margin: 0;
     
     img {
         width: 100%;
@@ -45,15 +52,25 @@
 }
 
 
+
+
 .caption {
     text-align: center;
 }
 
 
 .film-news-item {
+
+padding: 0 0 30px;
+
     
+
     .btn-details {
         float: right;
+    }
+
+    &__text {
+        text-align: justify;
     }
 }
 
