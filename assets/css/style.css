@@ -85,8 +85,8 @@ a:hover, a:focus {
 h1 {
   font-family: "PT Serif", serif;
   font-size: 48px;
-  overflow: hidden;
   margin: -7.5px 0 45px;
+  overflow: hidden;
   position: relative;
 }
 
@@ -102,11 +102,14 @@ h2 {
   font-family: "PT Serif", serif;
   font-size: 40px;
   margin: 60px 0 45px 45px;
+  overflow: hidden;
+  position: relative;
 }
 
 h2::before {
   position: absolute;
   left: 0;
+  top: 0;
   width: 30px;
   margin: 0.25em 0 0 0;
   content: "";
@@ -121,39 +124,9 @@ h2::after {
   border-bottom: 3px solid rgba(240, 173, 79, 0.7);
 }
 
-.container {
-  overflow: hidden;
-}
-
-.section {
+section {
   position: relative;
   overflow: hidden;
-}
-
-.footer {
-  background-color: #232323;
-  padding: 45px 0 20px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.footer ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.footer ul a {
-  color: #777777;
-}
-
-.footer ul a:hover {
-  color: #ffffff;
-}
-
-.footer__title {
-  color: #ffffff;
 }
 
 .header {
@@ -183,6 +156,14 @@ h2::after {
 }
 
 .main {
+  margin-bottom: 60px;
+}
+
+.main .site-search {
+  margin: -15px 0 45px;
+}
+
+.main .user-login {
   margin-bottom: 60px;
 }
 
@@ -367,10 +348,6 @@ iframe {
   width: 100%;
 }
 
-.panel {
-  margin-bottom: 30px;
-}
-
 .site-news-item {
   clear: both;
   position: relative;
@@ -467,6 +444,41 @@ iframe {
 
 .top-films-item:hover .badge {
   background-color: #232323;
+}
+
+.user-login {
+  margin-bottom: 60px;
+}
+
+.panel {
+  margin-bottom: 30px;
+  border: none;
+}
+
+.footer {
+  background-color: #232323;
+  padding: 45px 0 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer ul a {
+  color: #777777;
+}
+
+.footer ul a:hover {
+  color: #ffffff;
+}
+
+.footer__title {
+  color: #ffffff;
 }
 
 @media (min-width: 576px) {

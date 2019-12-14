@@ -1,0 +1,23 @@
+.footer {
+    background-color: $color-dark;
+    padding: 45px 0 20px;
+    display: flex;
+  
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+  
+      a {
+        color: #777777;
+  
+        &:hover {
+          color: $color-light;
+        }
+      }
+    }
+  
+    &__title {
+      color: $color-light;
+    }
+  }

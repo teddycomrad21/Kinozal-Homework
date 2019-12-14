@@ -16,10 +16,6 @@
     }
 }
 
-.panel {
-    margin-bottom: 30px;
-}
-
 .site-news {
     &-item {
         clear: both;
@@ -114,4 +110,13 @@
             }
         }
     }
+}
+
+.user-login {
+    margin-bottom: 60px;
+}
+
+.panel {
+    margin-bottom: 30px;
+    border: none;
 }
